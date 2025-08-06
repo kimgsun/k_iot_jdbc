@@ -57,7 +57,7 @@ package org.example.이론;
             - PreparedStatement: 미리 컴파일 된 SQL을 사용 (보안, 성능 향상)
 
             String sql = "SELECT * FROM users WHERE age > ?";
-            PreparedStatement pstmt = conn.preparedStatement(sql);
+            PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, 20);
 
         4) SQL 실행 (Execute)
@@ -76,7 +76,6 @@ package org.example.이론;
             pstmt.close();
             conn.close();
             >> 메모리 누수 방지 (모든 자원 해제)
-            ㅓㅁ
  */
 
 public class Jdbc02 {
