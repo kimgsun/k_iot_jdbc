@@ -76,6 +76,7 @@ package org.example.이론;
             pstmt.close();
             conn.close();
             >> 메모리 누수 방지 (모든 자원 해제)
+            ㅓㅁ
  */
 
 public class Jdbc02 {
